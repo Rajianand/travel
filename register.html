@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>
+            Registration page 
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+        <script src="log.js"></script>
+    
+    </head>
+    <body>
+        <div class="header">
+            <nav id="navBar">
+                <img src="images/logo-red.png" class="logo">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Popular Places</a></li>
+                    <li><a href="house.html">Travel Outside</a></li>
+                    <li><a href="listing.html">Online Packages</a></li>
+                </ul>
+            </nav>
+        <div class="register">
+            <h2>REGISTER HERE</h2>
+            <div class="search-bar">
+                <form onsubmit="return validation();" action="index.html">
+                    <div class="location-input">
+                        <div>
+                            <label>User Name</label>
+                            <input type="text" placeholder="Enter Name Here" id="name" required>        
+                        </div><br>
+                        <div>
+                            <label>Password</label>
+                            <input type="password" id="pass" required>        
+                        </div><br>
+                        <div>
+                            <label>Mail</label>
+                            <input type="email" placeholder="mail">        
+                        </div><br>
+                        <div>
+                            <label>Mobile Number</label>
+                            <input type="number">        
+                        </div><br>
+                      
+                            <button type="submit" onclick="input();">Submit</button>  
+                        
+                   </div>
+                   
+                </form>
+
+            </div>
+            
+        </div>
+   <script>
+        function input()
+        {
+            var uname = document.getElementById("name").value;
+            localStorage.setItem("name",uname);
+            var ps = document.getElementById("pass").value;
+            localStorage.setItem("password",ps);
+        }
+   </script>
+    </body>
+</html>

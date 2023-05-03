@@ -1,0 +1,110 @@
+body{
+	background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+*{
+	text-decoration: none;
+}
+.box-frame{
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex: 1 1 100%;
+	align-items: stretch;
+	justify-content: space-between;
+	box-shadow: 0 0 20px 6px #090b6f85;
+	margin: 80px 100px;
+}
+@media (max-width: 800px) {
+  .box-form {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+.box-frame div
+{
+	height: auto;
+}
+.box-frame .left{
+color: #FFFFFF;
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url("./wall.jpg");
+width: 90%;
+}
+.box-form .left .overlay {
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  background: #5961f9ad;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.box-frame .left .overley p{
+	font-family: ariel;
+	font-size: 30px;
+	margin-top: 50px;
+	font-weight: 30%;
+	color: black;
+	padding: 30px;
+	text-align: justify;
+}
+.box-frame .left .overley h1{
+	font-size: 50px;
+	padding: 20px 30px;
+}
+.box-frame .right{
+	padding: 30px ;
+	overflow: hidden;
+}
+.box-frame .right h1{
+	align-content: center;
+	padding: 30px;
+	margin: 10px;
+	font-size: 90px;
+}
+.box-frame .right > p{
+	font-size: 15px;
+	color: #B0B3B9;
+}
+.box-frame .right a:link{
+	text-decoration: none;
+}
+.box-frame .right .inputs{
+	padding: 12px 12px;
+	border-style: dotted;
+	border-radius: 15px;
+	margin: 10px;
+}
+.box-frame .right .end{
+	margin: 30px;
+	border: 20px;
+
+}
+
+.box-frame .right button
+{
+	float: right;
+	background-color: limegreen;
+	border-radius: 14px;
+	border-style: none;
+	color:	#7cfc00;
+	font-size: 25px;
+	align-items: right;
+	background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+	box-shadow: 6px 8px 65px 27px #11ff00 #ffffff ;
+
+}
+#marquee{
+	margin-top: 60px ;
+	font-size: 300%;
+	font-family: 'Times New Roman', Times, serif;
+	color: #FFFFFF;
+}
